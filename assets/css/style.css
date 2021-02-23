@@ -383,6 +383,7 @@ section {
 
 .flex-row {
     display: flex;
+    align-items: center;
 }
 
 /* contact form start */
