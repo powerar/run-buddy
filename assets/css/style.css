@@ -10,7 +10,13 @@
     box-sizing: border-box;
 }
 
+body {
+    color: var(--tertiary-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
 /* apply styles to <header> */
+
 header {
     padding: 20px 35px;
     background-color: var(--tertiary-color);
@@ -65,13 +71,6 @@ header nav ul li a:hover {
     color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
-}
-
-/* apply styles to body */
-
-body {
-    color: var(--tertiary-color);
-    font-family: Helvetica, Arial, sans-serif;
 }
 
 /* apply styles to footer */
@@ -335,6 +334,14 @@ section {
 
 /* apply style to trainer section */
 
+.trainers {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .trainer {
     margin: 20px;
     flex: 1;
@@ -363,27 +370,6 @@ section {
 
 .trainer-bio p {
     font-size: 17px;
-}
-
-.trainers {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.flex-row {
-    display: flex;
-    align-items: center;
 }
 
 /* contact form start */
@@ -463,6 +449,19 @@ section {
 .contact-form button:hover {
     color: var(--primary-color);
     background: var(--tertiary-color);
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
 }
 
 /* Media Query Start */
